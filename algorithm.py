@@ -136,8 +136,8 @@ pieces = data_label.TrackID
 
 # %%Step 7: Create Playlist 
 
-sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id = 'af3454dba3a342e3ad104421b402aaaa', 
-                                               client_secret = '13e88db67d294b9ea5d9e106c18d44f6',
+sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id = 'client_id', #add client id
+                                               client_secret = 'client_secret', #add client secret
                                                redirect_uri='http://localhost:8888/callback',
                                                scope='playlist-modify-public'))
 

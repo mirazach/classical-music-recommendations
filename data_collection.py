@@ -25,8 +25,8 @@ import GSA
 # %% Establishing Spotify connection 
 
 #Setting up authorization manager (link to my Spotify Developer account) 
-auth = SpotifyClientCredentials(client_id = 'af3454dba3a342e3ad104421b402aaaa', 
-                                client_secret = '13e88db67d294b9ea5d9e106c18d44f6')
+auth = SpotifyClientCredentials(client_id = 'client_id', #add client id 
+                                client_secret = 'client_secret') #add client secret
 
 sp = spotipy.Spotify(auth_manager=auth)
 

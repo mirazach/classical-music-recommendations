@@ -15,6 +15,6 @@ MSc Business Analytics Final Project: Using Principal Components Analysis and K-
 
 ### Report 
 
-You can read the full report [here] (https://github.com/mirazach/classical-music-recommendations/blob/main/Report.pdf). 
+You can read the full report [here](https://github.com/mirazach/classical-music-recommendations/blob/main/Report.pdf). 
 
 

@@ -32,7 +32,7 @@ from spotipy.oauth2 import SpotifyClientCredentials
 
 # %%Importing data 
 
-data = pd.read_excel('/Users/mirandazachopoulou/Desktop/BA Report/Data_Final.xlsx')
+data = pd.read_excel('Data_Final.xlsx')
 
 
 # %%Step 1: Selecting piece and extracting subset based on composer 

@@ -1,8 +1,8 @@
 
 library(tuneR)
 
-source_path <- '/Users/mirandazachopoulou/Desktop/BA Report/mp3'
-destin_path <- '/Users/mirandazachopoulou/Desktop/BA Report/wav'
+source_path <- '/mp3'
+destin_path <- '/wav'
 
 file_names <- list.files(source_path)
 

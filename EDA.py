@@ -17,7 +17,7 @@ import seaborn as sns
 # %%Importing data file and cleaning 
 
 #Importing Data  
-data = pd.read_excel('/Users/mirandazachopoulou/Desktop/BA Report/Data_Final.xlsx')
+data = pd.read_excel('Data_Final.xlsx')
 
 # %%Composer overview 
 
@@ -33,7 +33,7 @@ res = sns.barplot(x='Count',
             y='Composer', data=composers_grouped,
             order=composers_grouped.sort_values('Count',ascending = False).Composer)
 
-plt.savefig('/Users/mirandazachopoulou/Desktop/BA Report/Plots/plot1.png', dpi=300)
+plt.savefig('/Plots/plot1.png', dpi=300)
 
 # %%Variable Correlations 
 
@@ -46,7 +46,7 @@ sns.set(font_scale=2)
 
 sns.heatmap(df_plot.corr(), cmap="coolwarm", annot=True)
 
-plt.savefig('/Users/mirandazachopoulou/Desktop/BA Report/Plots/plot2.png', dpi=300)
+plt.savefig('/Plots/plot2.png', dpi=300)
 
 
 # %%Composition Features 
@@ -65,7 +65,7 @@ sns.set(font_scale=1)
 for i in comp_features: 
     plt.clf()
     sns.violinplot(x="Comp_Label", y=i, data=data[data.Comp_Label != 'None'])
-    plt.savefig('/Users/mirandazachopoulou/Desktop/BA Report/Plots/plot3_' + i + '.png', dpi=300)
+    plt.savefig('/Plots/plot3_' + i + '.png', dpi=300)
 
 
 
@@ -80,16 +80,16 @@ import numpy as np
 plt.rcParams["figure.figsize"] = [7.50, 3.50]
 plt.rcParams["figure.autolayout"] = True
 
-#file = '/Users/mirandazachopoulou/Desktop/BA Report/wav_red/Nocturne No 2 in E-Flat Major, Op 9 No 2_ID_1VNvsvEsUpuUCbHpVop1vo.wav'
-#file = '/Users/mirandazachopoulou/Desktop/BA Report/wav_red/Symphony No 40 in G Minor, K 550 I Allegro molto_ID_1O2hifLpcfAItR4rbPZMZo.wav'
-file = '/Users/mirandazachopoulou/Desktop/BA Report/wav_red/Elgar Cello Concerto in E Minor, Op 85 I Adagio - Moderato_ID_5cwPIak6Pg5HRuXpA5ecuO.wav'
+#file = '/wav_red/Nocturne No 2 in E-Flat Major, Op 9 No 2_ID_1VNvsvEsUpuUCbHpVop1vo.wav'
+#file = '/wav_red/Symphony No 40 in G Minor, K 550 I Allegro molto_ID_1O2hifLpcfAItR4rbPZMZo.wav'
+file = '/wav_red/Elgar Cello Concerto in E Minor, Op 85 I Adagio - Moderato_ID_5cwPIak6Pg5HRuXpA5ecuO.wav'
 
 sig, fs = librosa.load(file)
 plt.axis('off')
 S = librosa.feature.melspectrogram(y=sig, sr=fs)
 librosa.display.specshow(librosa.power_to_db(S, ref=np.max))
 
-plt.savefig('/Users/mirandazachopoulou/Desktop/BA Report/Plots/spectral_e.png', dpi=300)
+plt.savefig('/Plots/spectral_e.png', dpi=300)
     
     
 # %%Extracting playlists 
@@ -186,7 +186,7 @@ def mode(df):
     p.set_xlabel("Mode")
     p.set_title(df.name + ' Playlist: Mode Distribution')
     #saving
-    plt.savefig('/Users/mirandazachopoulou/Desktop/BA Report/Plots/mode_' + df.name + '.png', dpi=300)
+    plt.savefig('/Plots/mode_' + df.name + '.png', dpi=300)
 
 mode(tracks_m)
 mode(tracks_c)
@@ -246,7 +246,7 @@ p.set_title('Mozart Playlist Average vs Piece')
 p.set_ylabel('% Difference')
 p.set_xlabel('')
 p.set_xticklabels(p.get_xticklabels(),rotation = 80)
-plt.savefig('/Users/mirandazachopoulou/Desktop/BA Report/Plots/m_delta.png', dpi=300, bbox_inches='tight')
+plt.savefig('/Plots/m_delta.png', dpi=300, bbox_inches='tight')
 
 plt.clf()
 p = sns.barplot(x="Variables", y="C_Delta", data=compare[1:14], color=tracks_c.col, saturation=.5)
@@ -256,7 +256,7 @@ p.set_title('Chopin Playlist Average vs Piece')
 p.set_ylabel('% Difference')
 p.set_xlabel('')
 p.set_xticklabels(p.get_xticklabels(),rotation = 80)
-plt.savefig('/Users/mirandazachopoulou/Desktop/BA Report/Plots/c_delta.png', dpi=300, bbox_inches='tight')
+plt.savefig('/Plots/c_delta.png', dpi=300, bbox_inches='tight')
 
 plt.clf()
 p = sns.barplot(x="Variables", y="E_Delta", data=compare[1:14], color=tracks_e.col, saturation=.5)
@@ -266,7 +266,7 @@ p.set_title('Elgar Playlist Average vs Piece')
 p.set_ylabel('% Difference')
 p.set_xlabel('')
 p.set_xticklabels(p.get_xticklabels(),rotation = 80)
-plt.savefig('/Users/mirandazachopoulou/Desktop/BA Report/Plots/e_delta.png', dpi=300, bbox_inches='tight')
+plt.savefig('/Plots/e_delta.png', dpi=300, bbox_inches='tight')
 
 
     

@@ -23,8 +23,4 @@ The incorporation of machine learning techniques within the music industry has s
 - **LibROSA:** https://librosa.org
 - **tuneR:** https://cran.r-project.org/web/packages/tuneR/tuneR.pdf
 
-## Report 
-
-You can read the full report [here](https://github.com/mirazach/classical-music-recommendations/blob/main/Report.pdf). 
-
 

@@ -25,21 +25,19 @@ The incorporation of machine learning techniques within the music industry has s
 
 ## Data
 
+To create a training dataset, 49 classical composers' names were collected along with the links to their Spotify playlists and birth years. An algorithm was developed using Python's Spotipy and GSA libraries to extract track names and Spotify features from the playlists. Spectral features were obtained through the libROSA library by converting MP3 samples to WAV files using R's TuneR package. To manage computation, audio files were trimmed to 10 seconds using the pydub library. Additionally, Pandas was used to create a new feature category related to composition types, adding binary columns to indicate the presence of specific composition types in track titles. 
+
 <img width="938" alt="data" src="https://github.com/mirazach/classical-music-recommendations/assets/78528123/90d63f30-170b-4147-850a-0e283fd8eac7">
 
 
 ## Usage
 
 To create a new playlist you can follow the following steps: 
-1. Clone this repository
-2. In your directory, create a `.env` file and specify your Spotify credentials as descibed in the [Spotipy documentation](https://spotipy.readthedocs.io/en/2.10.0/): 
-     myUser = '...'
-     myClientID = '...'
-     myClientSecret = '...'
-     myRedirect = '...'
+1. Clone this repository.
+2. In your directory, create a `.env` file and specify your Spotify credentials as descibed in the [Spotipy documentation](https://spotipy.readthedocs.io/en/2.10.0/).
 3. Open the `02_recommendations.ipynb` notebook. Specify the piece that you would like to to create a playlist for.
 4. Create a new playlist on spotify and paste your playlist ID in the jupyter notebook.
-5. Run the `get_recommendation()` function and, once prompted, input the optimal k value for the k-means clustering model
+5. Run the `get_recommendation()` function and, once prompted, input the optimal k value for the k-means clustering model.
 
 https://github.com/mirazach/classical-music-recommendations/assets/78528123/75a59508-1133-4983-a16c-be8bda0e1bde
 

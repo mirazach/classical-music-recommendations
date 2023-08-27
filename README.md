@@ -40,6 +40,7 @@ To create a new playlist you can follow the following steps:
 5. Run the `get_recommendation()` function and, once prompted, input the optimal k value for the k-means clustering model.
 
 Demo:
+
 https://github.com/mirazach/classical-music-recommendations/assets/78528123/75a59508-1133-4983-a16c-be8bda0e1bde
 
 

@@ -17,6 +17,7 @@ The incorporation of machine learning techniques within the music industry has s
 
 ## Data
 
+<img width="938" alt="data" src="https://github.com/mirazach/classical-music-recommendations/assets/78528123/90d63f30-170b-4147-850a-0e283fd8eac7">
 
 
 

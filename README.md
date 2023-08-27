@@ -13,13 +13,19 @@ The incorporation of machine learning techniques within the music industry has s
 - **data_collection.py:** A python script that was used to collect music data from Spotify and extract relevant features
 - **mp3_to_wav.R:** An R script used to convert mp3 to WAV files.
 - **algorithm.py:** The main project algorithm that takes 3 select pieces as inputs, filters the dataset to include the relevant classical eras and performs PCA and K-Means clustering to produce similar playlist
-- **EDA.py:** A python script that performs exploratory data analysis of the dataset and creates visualisations for the algorithm results
+
 
 ## Data
 
 
 
+
+
 ## Usage
+
+
+
+## More information 
 
 
 

@@ -15,6 +15,16 @@ The incorporation of machine learning techniques within the music industry has s
 - **algorithm.py:** The main project algorithm that takes 3 select pieces as inputs, filters the dataset to include the relevant classical eras and performs PCA and K-Means clustering to produce similar playlist
 - **EDA.py:** A python script that performs exploratory data analysis of the dataset and creates visualisations for the algorithm results
 
+## Data
+
+
+
+## Usage
+
+
+
+
+
 ## Libraries Used 
 
 - **Spotipy:** https://spotipy.readthedocs.io/en/2.19.0/

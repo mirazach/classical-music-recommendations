@@ -8,11 +8,19 @@ The incorporation of machine learning techniques within the music industry has s
 
 ## File Descriptions
 
+**data**
+- **Composers.xlsx:** An excel spreadsheet of 49 composers, including their spotify playlist URI and birth and death dates.
+- **Data_Final.xlsx:** The final dataset that is used by the algorithm to make playlist recommendations.
+
+**scripts** 
 - **GSA.py:** The source code for the Generalised Spotify Analyser library
 - **spotifyConstants.py:** A python script that includes Spotify Developer account credentials that are used within GSA’s functions
-- **data_collection.py:** A python script that was used to collect music data from Spotify and extract relevant features
 - **mp3_to_wav.R:** An R script used to convert mp3 to WAV files.
-- **algorithm.py:** The main project algorithm that takes 3 select pieces as inputs, filters the dataset to include the relevant classical eras and performs PCA and K-Means clustering to produce similar playlist
+- **functions.ipynb:** A python script that contains helper functions for this project, including the playlist generation algorithm. 
+
+**notebooks** 
+- **01_data_collection.ipynb:** A jupyter notebook that can be used to collect music data from Spotify and extract relevant features
+- **02_recommendations.ipynb:** A jupyter notebook that can be used to create playlists given a selected piece from the data_final.xlsx dataset. 
 
 
 ## Data
@@ -20,19 +28,25 @@ The incorporation of machine learning techniques within the music industry has s
 <img width="938" alt="data" src="https://github.com/mirazach/classical-music-recommendations/assets/78528123/90d63f30-170b-4147-850a-0e283fd8eac7">
 
 
-
-
 ## Usage
+
+To create a new playlist you can follow the following steps: 
+1. Clone this repository
+2. In your directory, create a `.env` file and specify your Spotify credentials as descibed in the [Spotipy documentation](https://spotipy.readthedocs.io/en/2.10.0/): 
+     myUser = '...'
+     myClientID = '...'
+     myClientSecret = '...'
+     myRedirect = '...'
+3. Open the `02_recommendations.ipynb` notebook. Specify the piece that you would like to to create a playlist for.
+4. Create a new playlist on spotify and paste your playlist ID in the jupyter notebook.
+5. Run the `get_recommendation()` function and, once prompted, input the optimal k value for the k-means clustering model
 
 https://github.com/mirazach/classical-music-recommendations/assets/78528123/75a59508-1133-4983-a16c-be8bda0e1bde
 
 
-
-
 ## More information 
 
-
-
+You can read the full report [here](https://github.com/mirazach/classical-music-recommendations/blob/4b8250664e65fea9d41e74f3b7a24cc8030c7044/Report.pdf)
 
 
 ## Libraries Used 
